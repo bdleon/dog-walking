@@ -1,4 +1,5 @@
 import { getWalkers } from "./database.js"
+const walkers = getWalkers()
 
 document.addEventListener(
     "click",
@@ -11,12 +12,13 @@ document.addEventListener(
                 if (walker.id === parseInt(walkerId)) {
                     window.alert(`${walker.name} services ${walker.city}`)
                 }
+
             }
         }
     }
 )
 
-const walkers = getWalkers()
+
 
 
 export const Walkers = () => {
